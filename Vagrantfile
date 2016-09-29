@@ -1,5 +1,6 @@
 # Tenn Share Vagrant Box
 Vagrant.configure(2) do |config|
+  config.vm.box_download_insecure = "dansweeting/ubuntu-trusty64-mongo-node"
   config.vm.box = "dansweeting/ubuntu-trusty64-mongo-node"
 
   shared_dir = "/vagrant"
